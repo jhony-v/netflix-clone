@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "components/*" : ["src/components"],
+            "pages/*" : ["src/pages"],
+            "config/*" : ["src/config"],
+            "hooks/*" : ["src/hooks"],
+            "features/*" : ["src/features"],
+            "lib/*" : ["src/lib"],
+            "images/*" : ["src/images"],
+        },
+        "jsx": "react"
+    }
+}
