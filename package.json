@@ -15,17 +15,23 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
+    "classnames": "^2.2.6",
     "gatsby": "^2.26.1",
     "gatsby-plugin-manifest": "^2.7.0",
     "gatsby-plugin-react-helmet": "^3.5.0",
+    "gatsby-plugin-styled-components": "^3.6.0",
     "gatsby-source-filesystem": "^2.6.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.1.0",
-    "rxjs": "^6.6.3"
+    "rimraf": "^3.0.2",
+    "rxjs": "^6.6.3",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "faker": "^5.1.0",
     "gatsby-plugin-postcss": "^3.2.0",
     "gatsby-plugin-root-import": "^2.0.5",
     "gh-pages": "^3.1.0",

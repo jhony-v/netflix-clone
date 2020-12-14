@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -22,11 +23,13 @@ module.exports = {
         options: {
           pages: path.join(__dirname, 'src/pages'),
           components: path.join(__dirname, 'src/components'),
+          containers: path.join(__dirname, 'src/containers'),
           config: path.join(__dirname, 'src/config'),
           lib: path.join(__dirname, 'src/lib'),
-          features: path.join(__dirname, 'src/features'),
+          views: path.join(__dirname, 'src/views'),
           hooks: path.join(__dirname, 'src/hooks'),
           images: path.join(__dirname, 'src/images'),
+          data: path.join(__dirname, 'src/data'),
         }
     }
   ],
