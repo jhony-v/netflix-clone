@@ -67,7 +67,7 @@ const FooterNavigation = () => {
             </p>
             <ul className="flex flex-wrap">
                 {dataLinks.map((item,key) => (
-                    <li className="py-4 block" style={{width:"300px"}} key={key}>
+                    <li className="py-2 sm:py-4 block" style={{width:"250px"}} key={key}>
                         <a className="text-gray-400 text-sm" href={item.link}>{item.text}</a>
                     </li>
                 ))}
