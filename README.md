@@ -9,7 +9,7 @@
 </h2>
 
 ## Overview
-Clone of the main screen of Netflix created with Gatsby and TailwindCSS.
+Clone of the main screen of Netflix created with gatsby, tailwindCSS and faker to show data.
 
 ## Requeriments
 To use this project in local you need to have installed:
@@ -23,6 +23,11 @@ $ npm i gatsby-cli -g
 ```
 
 ## Usage
+
+### Clone the repository
+````console
+$ git clone https://github.com/jhony-24/netflix-clone.git
+```
 
 #### Installation 
 ```console
