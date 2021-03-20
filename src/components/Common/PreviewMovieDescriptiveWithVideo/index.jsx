@@ -25,11 +25,11 @@ const PreviewMovieDescriptiveWithVideo = ({
     onClose
 }) => {
     return (
-        <div className="relative bg-red">
+        <div className="relative">
             <div className="flex relative flex-col">
                 <GradientWrapper />
-                <div className="relative w-2/4">
-                    <div className="z-20 relative p-10">
+                <div className="relative w-full sm:w-2/4 bg-red-200">
+                    <div className="z-20 relative px-4 py-10 sm:px-10">
                         <MovieDescription
                             createdDate={createdDate}
                             punctuation={punctuation}
@@ -44,7 +44,7 @@ const PreviewMovieDescriptiveWithVideo = ({
                 <div className="object-cover absolute right-0 h-full w-3/5">
                     <PreviewVideo video={video} />
                 </div>
-                <div className="absolute right-0 top-0 m-2 text-white" role="button" onClick={onClose}>
+                <div className="absolute right-0 top-0 m-2 text-white" role="button" tabIndex="0" onKeyUp={onClose} onClick={onClose}>
                     <VscClose size={30} />
                 </div>
             </div>

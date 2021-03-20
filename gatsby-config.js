@@ -26,10 +26,11 @@ module.exports = {
           containers: path.join(__dirname, 'src/containers'),
           config: path.join(__dirname, 'src/config'),
           lib: path.join(__dirname, 'src/lib'),
-          views: path.join(__dirname, 'src/views'),
+          modules: path.join(__dirname, 'src/modules'),
           hooks: path.join(__dirname, 'src/hooks'),
           images: path.join(__dirname, 'src/images'),
           data: path.join(__dirname, 'src/data'),
+          store: path.join(__dirname, 'src/store'),
         }
     }
   ],

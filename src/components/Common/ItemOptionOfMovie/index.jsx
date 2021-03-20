@@ -9,7 +9,7 @@ const Border = styled.div`
 `
 
 const ItemOptionOfMovie = ({ selected, onClick, children, className }) => {
-    const optionClassname = cn("flex flex-col", className);
+    const optionClassname = cn("flex flex-col outline-none", className);
     return (
         <div className={optionClassname} role="button" onClick={onClick} onKeyUp={onClick} tabIndex="0">
             <span className="text-gray-100 mb-2 font-bold uppercase text-sm">{children}</span>

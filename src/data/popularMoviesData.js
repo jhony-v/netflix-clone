@@ -6,10 +6,11 @@ export default function popularMoviesData(category,totalItems = 6) {
         items : [...Array(totalItems)].map((_,index) => ({
             image : faker.random.image(),
             movieId : index,
-            description : "Save your favorites easily and always have something to watch. Save your favorites easily.",
+            description : faker.lorem.paragraph(1),
             punctuation:4,
-            title: "Netflix clone",
-            createdDate: new Date().toLocaleDateString()
+            title: faker.random.word() + " " + faker.random.word(),
+            createdDate: new Date().toLocaleDateString(),
+            category
         }))
     }
 }

@@ -3,7 +3,7 @@ import LinkItem from './LinkItem'
 
 const LinksNavigator = () => {
     return (
-        <ul className="flex items-center">
+        <ul className="flex items-center justify-evenly sm:justify-start">
             <LinkItem href="/">Home</LinkItem>
             <LinkItem href="/tv-shows">Tv Shows</LinkItem>
             <LinkItem href="/movies">Movies</LinkItem>

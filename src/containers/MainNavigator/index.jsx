@@ -5,9 +5,9 @@ import LinksNavigator from 'containers/LinksNavigator'
 
 const MainNavigator = ({ children }) => {
     const headerComponent = (
-        <div className="flex w-full p-2 items-center">
+        <div className="flex w-full p-2 items-center flex-col sm:flex-row">
             <NetflixNameLogo />
-            <div className="ml-10">
+            <div className="ml-10 w-full sm:w-auto">
                 <LinksNavigator />
             </div>
         </div>

@@ -10,8 +10,9 @@ const CardDescriptiveWrapper = styled.div`
 `;
 
 const CardWrapper = styled.div`
-    width:${props => props.w};
-    height:${props => props.h};
+    @media (min-width:640px) {
+        height:${props => props.h};
+    }
     transition:transform .3s;
     :hover {
         transform:scale(1.1);
@@ -23,19 +24,20 @@ const CardWrapper = styled.div`
 `;
 
 const PopularMovieDescriptiveCard = ({
-    image,
-    title,
-    description,
     onClick,
     onAdd,
-    createdDate,
-    punctuation,
-    movieId,
-    w,
     h,
+    movie : {
+        image,
+        title,
+        description,
+        createdDate,
+        punctuation,
+        movieId,
+    }
 }) => {
     return (
-        <CardWrapper className="relative flex items-end overflow-hidden select-none" w={w} h={h}>
+        <CardWrapper className="relative flex items-end overflow-hidden select-none mb-3 h-auto" h={h}>
             <img src={image} alt={title} className="absolute w-full h-full left-0 top-0 object-cover" />
             <div className="absolute w-full h-full bg-gradient-to-tr from-black" />
             <CardDescriptiveWrapper className="pl-2 pr-2 relative w-full">
@@ -62,6 +64,17 @@ const PopularMovieDescriptiveCard = ({
             </CardDescriptiveWrapper>
         </CardWrapper>
     )
+}
+
+PopularMovieDescriptiveCard.defaultProps = {
+    movie : {
+        image : "",
+        title : "",
+        description : "",
+        createdDate : "",
+        punctuation : 0,
+        movieId : 0,
+    }
 }
 
 export default PopularMovieDescriptiveCard
